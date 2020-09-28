@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rm /var/lib/apt/lists/lock
+
+apt update && apt upgrade -y && apt autoremove -y && apt autoclean
